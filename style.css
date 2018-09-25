@@ -86,18 +86,15 @@ input::placeholder {
 }
 
 .t1 {
-  background: center / cover
-    url(/assets/LPMOBILE/02_NO_TXT/ClosedVersion/XC-Closed.jpg);
+  background: center / cover url(/assets/XC-Closed.jpg);
 }
 
 .t2 {
-  background: center / cover
-    url(/assets/LPMOBILE/02_NO_TXT/ClosedVersion/TRAIL-Closed.jpg);
+  background: center / cover url(/assets/TRAIL-Closed.jpg);
 }
 
 .t3 {
-  background: center / cover
-    url(/assets/LPMOBILE/02_NO_TXT/ClosedVersion/DRY-Closed.jpg);
+  background: center / cover url(/assets/DRY-Closed.jpg);
 }
 
 .tire-guide1,
