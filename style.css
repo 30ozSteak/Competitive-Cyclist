@@ -6,8 +6,23 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+i {
+  color: gray;
+}
+
+i:hover {
+  cursor: pointer;
+  filter: brightness(120%);
+}
+
 body {
   text-align: center;
+}
+
+hr {
+  height: 1rem;
+  background-color: black;
+  border: 0;
 }
 
 .header {
@@ -18,8 +33,11 @@ body {
   margin-top: 1rem;
 }
 
+.fa-plus {
+  color: rgb(231, 0, 0);
+}
+
 .header i {
-  color: gray;
   padding-top: 0.8rem;
 }
 
@@ -76,15 +94,19 @@ input::placeholder {
   background: center / cover
     url(/assets/LPMOBILE/02_NO_TXT/ClosedVersion/TRAIL-Closed.jpg);
 }
+
 .t3 {
   background: center / cover
     url(/assets/LPMOBILE/02_NO_TXT/ClosedVersion/DRY-Closed.jpg);
 }
 
 .tire-guide1,
-.step1 p {
+.step1 p,
+.step2 p,
+.step3 p,
+.step4 p {
   margin-top: 1rem;
-  padding: 1rem;
+  padding: 1.5rem;
   text-align: left;
   line-height: 1.9rem;
   font-size: 1.2rem;
@@ -103,11 +125,21 @@ input::placeholder {
   margin-top: 1rem;
 }
 
-.step1 {
+.step1,
+.step2,
+.step3,
+.step4 {
   background-color: rgb(199, 199, 199);
 }
 
-.step1 h1 {
+.step4 {
+  padding-bottom: 4rem;
+}
+
+.step1 h1,
+.step2 h1,
+.step3 h1,
+.step4 h1 {
   text-align: center;
   padding: 1rem 2rem;
 }
@@ -123,14 +155,152 @@ input::placeholder {
   margin: 0;
 }
 
-.step1-tires {
+.step1-tires,
+.step2-tires {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   height: 30rem;
   grid-gap: 0.3rem;
+  padding-bottom: 1rem;
 }
 
-.step1-tires .t1 {
-  background: center / cover
-    url(/assets/LPMOBILE/02_NO_TXT/ClosedVersion/XC-Closed.jpg);
+img {
+  width: 95%;
+}
+
+.step4 h1 {
+  text-transform: uppercase;
+}
+
+.vittoria-image img {
+  width: 80%;
+}
+
+.vittoria-image p {
+  padding: 0;
+  text-align: center;
+  position: relative;
+  bottom: 6.5rem;
+  line-height: 1rem;
+}
+
+.vittoria-image p:nth-child(2) {
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 2rem;
+  position: relative;
+}
+
+.step4 a {
+  color: black;
+  padding-bottom: 0.2rem;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  border-bottom: 5px solid black;
+  text-decoration: none;
+}
+
+.chat-now {
+  background-color: rgb(20, 20, 20);
+  color: rgb(224, 224, 224);
+  font-size: 1.3rem;
+}
+
+.chat-now p:first-child {
+  text-transform: uppercase;
+  padding-bottom: 0;
+  font-size: 1.7rem;
+  text-align: left;
+}
+
+.chat-now p:nth-child(2) {
+  padding-top: 0;
+  font-size: 1.1rem;
+}
+
+.chat-now p {
+  padding: 2rem;
+  text-align: justify;
+}
+
+.chat-now button {
+  width: 80%;
+  padding: 1rem;
+  border: 1px solid white;
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  border-radius: 2px;
+  transition: 0.1s;
+  background-color: rgb(20, 20, 20);
+}
+
+.chat-now button:hover {
+  background-color: rgb(36, 36, 36);
+  cursor: pointer;
+}
+
+.footer button {
+  text-align: center;
+  padding: 0.5rem 0;
+  font-size: 1.1rem;
+  background-color: transparent;
+  border-radius: 2px;
+  width: 10rem;
+  color: gray;
+  transition: 0.1s;
+}
+
+.footer button:hover {
+  cursor: pointer;
+  background-color: rgb(46, 46, 46);
+  color: white;
+}
+
+.footer ul {
+  text-align: left;
+  list-style: none;
+  margin: 2rem 0;
+}
+
+.footer li:first-child {
+  border-top: 1px solid gray;
+}
+
+.footer li {
+  padding: 0.8rem;
+  border-bottom: 1px solid gray;
+  transition: 0.1s;
+}
+
+.footer li:hover {
+  cursor: pointer;
+  background-color: rgb(219, 219, 219);
+}
+
+.email-header {
+  text-transform: uppercase;
+}
+
+.footer i {
+  font-size: 2rem;
+  padding: 5px;
+  margin: 1rem 0;
+}
+
+.footer input {
+  margin-bottom: 1rem;
+}
+
+.footer a {
+  color: gray;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 3px solid gray;
+  margin-bottom: 1rem;
+}
+
+.by-me {
+  color: gray;
 }
