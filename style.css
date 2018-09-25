@@ -134,6 +134,43 @@ input::placeholder {
 
 .step4 {
   padding-bottom: 4rem;
+  transition: 0.1s;
+}
+
+.step4 span:hover {
+  color: rgb(231, 0, 0);
+  cursor: pointer;
+}
+
+.dots i {
+  margin: 0.5rem;
+}
+
+.step4 span {
+  color: gray;
+}
+
+.step4 span:first-child,
+.dots i:first-child {
+  color: rgb(231, 0, 0);
+}
+
+.step4 .step4-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  padding-bottom: 0;
+}
+
+.step4 .step4-sub {
+  font-size: 1.8rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  font-weight: 600;
+}
+
+.step4 .step4-category {
+  font-size: 1.8rem;
+  padding-top: 0;
 }
 
 .step1 h1,
