@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --lightestGray: rgb(245, 245, 245);
+}
+
+body {
+  text-align: center;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 5rem 1fr 5rem;
+  height: 3rem;
+  justify-items: center;
+  margin-top: 1rem;
+}
+
+.header i {
+  color: gray;
+  padding-top: 0.8rem;
+}
+
+.brand-logo {
+  width: 10rem;
+}
+
+/* .meaningless-wrapper::after {
+  content: "\f000";
+  position: relative;
+  font-family: "Font Awesome 5 Free";
+  width: 5%;
+} */
+
+input {
+  padding: 0.5rem;
+  width: 95%;
+  font-style: italic;
+  margin: 0.5rem;
+  border-radius: 2px;
+  font-size: 0.8rem;
+  position: relative;
+  background-color: var(--lightestGray);
+}
+
+input::placeholder {
+  color: gray;
+}
+
+.hero-tire-guide {
+  height: 15rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  min-height: 20rem;
+}
+
+/* .hero-tire-guide:: after{
+  put The Mountain text here 
+} */
+
+.t1 {
+  background: center / cover
+    url(/assets/LPMOBILE/02_NO_TXT/ClosedVersion/XC-Closed.jpg);
+}
+
+.t2 {
+  background: center / cover
+    url(/assets/LPMOBILE/02_NO_TXT/ClosedVersion/TRAIL-Closed.jpg);
+}
+.t3 {
+  background: center / cover
+    url(/assets/LPMOBILE/02_NO_TXT/ClosedVersion/DRY-Closed.jpg);
+}
+
+h1 {
+}
