@@ -86,15 +86,15 @@ input::placeholder {
 }
 
 .t1 {
-  background: center / cover url(/assets/xc-closed.jpg);
+  background: center / cover url(/assets/xcclosed.jpg);
 }
 
 .t2 {
-  background: center / cover url(/assets/trail-closed.jpg);
+  background: center / cover url(/assets/trailclosed.jpg);
 }
 
 .t3 {
-  background: center / cover url(/assets/dry-closed.jpg);
+  background: center / cover url(/assets/dryclosed.jpg);
 }
 
 .tire-guide1,
