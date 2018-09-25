@@ -85,6 +85,11 @@ input::placeholder {
   font-size: 1.2rem;
 }
 
+.hero-tire-guide {
+  background: center / cover url(/assets/P1.jpg);
+  height: 30rem;
+}
+
 .t1 {
   background: center / cover url(/assets/xcclosed.jpg);
 }
