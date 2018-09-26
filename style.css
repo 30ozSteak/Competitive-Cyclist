@@ -6,6 +6,7 @@
   --darkGray: #d7d7d7;
   --mediumGray: #cccccc;
   --headerBlack: #010101;
+  --thisRed: #bc271a;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -19,14 +20,14 @@ a:hover {
   filter: brightness(120%);
 }
 
-body {
-  text-align: center;
-}
-
 hr {
   height: 0.7rem;
   background-color: black;
   border: 0;
+}
+
+body {
+  text-align: center;
 }
 
 .header {
@@ -34,13 +35,9 @@ hr {
   grid-template-columns: 5rem 1fr 5rem;
   height: 3rem;
   justify-items: center;
+  margin-bottom: 0;
   margin-top: 1rem;
   padding-bottom: 0;
-  margin-bottom: 0;
-}
-
-.fa-plus {
-  color: rgb(231, 0, 0);
 }
 
 .header i {
@@ -186,12 +183,13 @@ input::placeholder {
 }
 
 .step4 span:hover {
-  color: rgb(231, 0, 0);
+  filter: brightness(120%);
   cursor: pointer;
 }
 
 .dots i {
   margin: 0.5rem;
+  font-size: 0.6rem;
 }
 
 .step4 span {
@@ -200,7 +198,7 @@ input::placeholder {
 
 .step4 span:first-child,
 .dots i:first-child {
-  color: rgb(231, 0, 0);
+  color: var(--thisRed);
 }
 
 .step4 .step4-title {
@@ -229,11 +227,16 @@ input::placeholder {
   padding: 0.4rem 2rem 0 2rem;
 }
 
-.step2 .more-images {
-  color: rgb(231, 0, 0);
+.step1 .more-images,
+i,
+.step2 .more-images,
+i,
+.step3 .more-images,
+i {
+  color: var(--thisRed);
   text-transform: uppercase;
   font-weight: 600;
-  padding-top: 0;
+  padding-top: 1rem;
 }
 
 .hero-tire-guide {
@@ -242,7 +245,8 @@ input::placeholder {
 }
 
 .step1-tires,
-.step2-tires {
+.step2-tires,
+.step3-tires {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   height: 15.1rem;
@@ -250,6 +254,9 @@ input::placeholder {
   padding-bottom: 0.8rem;
 }
 
+.step3 hr {
+  margin-top: 1rem;
+}
 img {
   width: 95%;
 }
@@ -259,14 +266,17 @@ img {
 }
 
 .vittoria-image img {
-  width: 80%;
+  height: 23rem;
+  width: 70%;
 }
 
 .vittoria-image p {
   padding: 0;
   text-align: center;
   position: relative;
-  bottom: 6.5rem;
+  bottom: 5.5rem;
+  font-size: 0.9rem;
+  padding-top: 0.5rem;
   line-height: 1rem;
 }
 
