@@ -84,7 +84,7 @@ input::placeholder {
 }
 
 .image-overlay {
-  background: center / cover url(assets/P1.jpg);
+  background: center / cover url(./assets/P1.jpg);
   height: 28rem;
 }
 
@@ -106,15 +106,15 @@ input::placeholder {
 }
 
 .t1 {
-  background: center / cover url(/assets/xcclosed.jpg);
+  background: center / cover url(./assets/xcclosed.jpg);
 }
 
 .t2 {
-  background: center / cover url(/assets/trailclosed.jpg);
+  background: center / cover url(./assets/trailclosed.jpg);
 }
 
 .t3 {
-  background: center / cover url(/assets/dryclosed.jpg);
+  background: center / cover url(./assets/dryclosed.jpg);
 }
 
 .t1 h4,
@@ -430,7 +430,7 @@ img {
   font-size: 0.9rem;
   position: relative;
   background-color: var(--lightestGray);
-  background: url(assets/search.png) no-repeat scroll 21.5rem 9px;
+  background: url(./assets/search.png) no-repeat scroll 21.5rem 9px;
 }
 
 .footer-input input {
