@@ -4,15 +4,12 @@
   box-sizing: border-box;
   --lightestGray: #f3f3f3;
   --darkGray: #d7d7d7;
+  --iconGray: #999999;
   --mediumGray: #cccccc;
   --headerBlack: #010101;
   --thisRed: #bc271a;
   --icons: #2e2e2e;
   font-family: Arial, Helvetica, sans-serif;
-}
-
-i {
-  color: gray;
 }
 
 i:hover,
@@ -43,6 +40,7 @@ body {
 
 .header i {
   padding-top: 0.8rem;
+  color: var(--iconGray);
 }
 
 .brand-logo {
@@ -77,7 +75,7 @@ input::placeholder {
 .image-overlay::before {
   content: "Free Shipping on Orders Over $50* »";
   position: absolute;
-  background-color: rgb(199, 199, 199);
+  background-color: #cbcbcb;
   width: 100%;
   color: #303030;
   left: 0;
@@ -249,6 +247,7 @@ i {
   text-transform: uppercase;
   font-weight: 600;
   padding-top: 1rem;
+  font-size: 1.1rem;
 }
 
 .hero-tire-guide {
@@ -354,6 +353,10 @@ img {
   cursor: pointer;
 }
 
+.footer {
+  background-color: #f3f3f3;
+}
+
 .footer button {
   text-align: center;
   padding: 0.6rem 1.2rem;
@@ -403,9 +406,9 @@ img {
 }
 
 .footer input {
-  margin-top: 0 !important;
-  margin-bottom: 0 !important;
-  width: 70%;
+  margin-top: 2rem;
+  width: 90%;
+  background-color: white;
 }
 
 .footer a {
@@ -414,6 +417,10 @@ img {
   text-decoration: none;
   border-bottom: 3px solid gray;
   margin-bottom: 1rem;
+}
+
+.footer-input input {
+  width: 70%;
 }
 
 .footer-input .fa-envelope {
