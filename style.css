@@ -106,15 +106,15 @@ input::placeholder {
 }
 
 .t1 {
-  background: center / cover url(../backcountry-dot-org/xcclosed.jpg);
+  background: center / cover url(/xcclosed.jpg);
 }
 
 .t2 {
-  background: center / cover url(./assets/trailclosed.jpg);
+  background: center / cover url(/trailclosed.jpg);
 }
 
 .t3 {
-  background: center / cover url(./assets/dryclosed.jpg);
+  background: center / cover url(/dryclosed.jpg);
 }
 
 .t1 h4,
