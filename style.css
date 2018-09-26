@@ -2,7 +2,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  --lightestGray: rgb(245, 245, 245);
+  --lightestGray: #f3f3f3;
+  --darkGray: #d7d7d7;
+  --mediumGray: #cccccc;
+  --headerBlack: #010101;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -10,7 +13,8 @@ i {
   color: gray;
 }
 
-i:hover {
+i:hover,
+a:hover {
   cursor: pointer;
   filter: brightness(120%);
 }
@@ -20,7 +24,7 @@ body {
 }
 
 hr {
-  height: 1rem;
+  height: 0.7rem;
   background-color: black;
   border: 0;
 }
@@ -31,6 +35,8 @@ hr {
   height: 3rem;
   justify-items: center;
   margin-top: 1rem;
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
 .fa-plus {
@@ -53,41 +59,54 @@ hr {
 } */
 
 input {
-  padding: 0.5rem;
+  padding: 0.7rem;
   width: 95%;
   font-style: italic;
   margin: 0.5rem;
-  /* border-radius: 2px; */
   outline: none;
-  border: 1px solid gray;
-  font-size: 0.8rem;
+  border-radius: 2px;
+  border: 1px solid #cccccc;
+  font-size: 0.9rem;
   position: relative;
   background-color: var(--lightestGray);
 }
 
 input::placeholder {
-  color: gray;
+  color: #999999;
+  font-size: 1.1rem;
 }
 
-.hero-tire-guide {
-  height: 15rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  min-height: 20rem;
-}
-
-.hero-tire-guide::before {
-  content: "Free Shipping on Orders Over $50* >>";
+.image-overlay::before {
+  content: "Free Shipping on Orders Over $50* »";
   position: absolute;
   background-color: rgb(199, 199, 199);
   width: 100%;
+  color: #303030;
+  left: 0;
   padding: 0.8rem 0;
   font-size: 1.2rem;
 }
 
-.hero-tire-guide {
-  background: center / cover url(/assets/P1.jpg);
-  height: 30rem;
+.image-overlay {
+  background: center / cover url(assets/P1.jpg);
+  height: 28rem;
+}
+
+.image-overlay h3,
+.image-overlay h1 {
+  font-family: "Permanent Marker", cursive;
+  color: var(--darkGray);
+}
+
+.image-overlay h1 {
+  font-size: 3rem;
+  letter-spacing: 5px;
+  line-height: 2rem;
+}
+
+.image-overlay h3 {
+  font-size: 1.5rem;
+  padding-top: 12rem;
 }
 
 .t1 {
@@ -102,29 +121,51 @@ input::placeholder {
   background: center / cover url(/assets/dryclosed.jpg);
 }
 
+.t1 h4,
+.t2 h4,
+.t3 h4 {
+  font-family: "Permanent Marker", cursive;
+  color: rgb(214, 214, 214);
+  font-size: 2rem;
+  padding-top: 1.5rem;
+}
+
 .tire-guide1,
 .step1 p,
 .step2 p,
 .step3 p,
 .step4 p {
-  margin-top: 1rem;
-  padding: 1.5rem;
+  padding: 1.9rem;
   text-align: left;
-  line-height: 1.9rem;
-  font-size: 1.2rem;
+  line-height: 1.6rem;
+  font-size: 1.25rem;
+  color: #020202;
+}
+
+.step1,
+.step2 .step-description {
+  padding-bottom: 0;
+}
+
+.tg1-steps p:first-child {
+  margin-top: 3rem;
 }
 
 .tire-guide1 h1 {
   padding-bottom: 1.5rem;
+  font-size: 1.6rem;
+  font-weight: 550;
+  color: var(--headerBlack);
 }
 
 .tg1-steps {
   text-align: center;
+  margin-top: 2rem;
 }
 
 .tg1-steps p:nth-child(odd) {
   font-weight: 600;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 }
 
 .step1,
@@ -132,6 +173,11 @@ input::placeholder {
 .step3,
 .step4 {
   background-color: rgb(199, 199, 199);
+  padding-top: 2rem;
+}
+
+.step1 h1 {
+  font-size: 1.7rem;
 }
 
 .step4 {
@@ -180,13 +226,14 @@ input::placeholder {
 .step3 h1,
 .step4 h1 {
   text-align: center;
-  padding: 1rem 2rem;
+  padding: 0.4rem 2rem 0 2rem;
 }
 
-.more-images {
+.step2 .more-images {
   color: rgb(231, 0, 0);
   text-transform: uppercase;
   font-weight: 600;
+  padding-top: 0;
 }
 
 .hero-tire-guide {
@@ -198,9 +245,9 @@ input::placeholder {
 .step2-tires {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  height: 30rem;
+  height: 15.1rem;
   grid-gap: 0.3rem;
-  padding-bottom: 1rem;
+  padding-bottom: 0.8rem;
 }
 
 img {
