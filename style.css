@@ -1,7 +1,10 @@
+/* ------------------General Styles */
+
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
   --lightestGray: #f3f3f3;
   --darkGray: #d7d7d7;
   --iconGray: #999999;
@@ -9,7 +12,6 @@
   --headerBlack: #010101;
   --thisRed: #bc271a;
   --icons: #2e2e2e;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 i:hover,
@@ -19,23 +21,27 @@ a:hover {
 }
 
 hr {
-  height: 0.7rem;
   background-color: black;
   border: 0;
+  height: 0.7rem;
 }
 
 body {
   text-align: center;
 }
 
+img {
+  width: 95%;
+}
+
+/* ------------------Nav */
+
 .header {
   display: grid;
   grid-template-columns: 5rem 1fr 5rem;
   height: 3rem;
   justify-items: center;
-  margin-bottom: 0;
   margin-top: 1rem;
-  padding-bottom: 0;
 }
 
 .header i {
@@ -47,24 +53,25 @@ body {
   width: 10rem;
 }
 
-.meaningless-wrapper i {
+.input-wrapper i {
+  color: var(--iconGray);
   position: absolute;
   right: 20px;
   top: 4.3rem;
-  color: var(--iconGray);
 }
 
-.nav input {
-  padding: 0.7rem;
-  width: 95%;
+.nav input,
+.footer input {
+  background-color: var(--lightestGray);
   font-style: italic;
-  margin: 0.5rem;
-  outline: none;
+  font-size: 0.9rem;
   border-radius: 2px;
   border: 1px solid #cccccc;
-  font-size: 0.9rem;
+  margin: 0.5rem;
+  outline: none;
+  padding: 0.7rem;
   position: relative;
-  background-color: var(--lightestGray);
+  width: 95%;
 }
 
 input::placeholder {
@@ -72,37 +79,113 @@ input::placeholder {
   font-size: 1.1rem;
 }
 
-.image-overlay::before {
-  content: "Free Shipping on Orders Over $50* »";
-  position: absolute;
-  background-color: #cbcbcb;
-  width: 100%;
-  color: #303030;
-  left: 0;
-  padding: 0.8rem 0;
-  font-size: 1.2rem;
-}
+/* ------------------Hero Image */
 
-.image-overlay {
+.hero-image {
   background: center / cover url(./assets/P1.jpg);
   height: 28rem;
 }
 
-.image-overlay h3,
-.image-overlay h1 {
-  font-family: "Permanent Marker", cursive;
-  color: var(--darkGray);
+.hero-image:before {
+  background-color: #cbcbcb;
+  color: #303030;
+  content: "Free Shipping on Orders Over $50* »";
+  font-size: 1.2rem;
+  left: 0;
+  padding: 0.8rem 0;
+  position: absolute;
+  width: 100%;
 }
 
-.image-overlay h1 {
-  font-size: 3rem;
-  letter-spacing: 5px;
-  line-height: 2rem;
+.hero-image img {
+  margin-top: 13rem;
 }
 
-.image-overlay h3 {
-  font-size: 1.5rem;
-  padding-top: 12rem;
+/* ------------------Tire Guide Welcome */
+
+.tire-guide1,
+.step1 p,
+.step2 p,
+.step3 p,
+.step4 p {
+  color: #020202;
+  font-size: 1.25rem;
+  line-height: 1.6rem;
+  padding: 1.9rem;
+  text-align: left;
+}
+
+.tg1-steps {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.tg1-steps p:first-child {
+  margin-top: 3rem;
+}
+
+.tg1-steps p:nth-child(odd) {
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+
+/* ------------------Steps*/
+
+.step1,
+.step2,
+.step3,
+.step4 {
+  background-color: rgb(199, 199, 199);
+  padding-top: 2rem;
+}
+
+body .more-images,
+body .more-images i {
+  color: var(--thisRed);
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding-top: 1rem;
+  text-transform: uppercase;
+}
+
+.step1 h1,
+.step2 h1,
+.step3 h1,
+.step4 h1 {
+  text-align: center;
+  padding: 0.4rem 2rem 0 2rem;
+}
+
+.step1-tires,
+.step2-tires,
+.step3-tires {
+  display: grid;
+  height: 14.7rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 0.3rem;
+  padding-bottom: 0.8rem;
+}
+
+.step1 .step-description,
+.step2 .step-description,
+.step3 .step-description {
+  padding-bottom: 0;
+}
+
+/* ------------------Step 1*/
+
+.step1 h1 {
+  font-size: 1.7rem;
+}
+
+.step1 img:first-child {
+  width: 65%;
+}
+
+.tire img {
+  height: 1.5rem;
+  margin-top: 0.7rem;
+  width: 70%;
 }
 
 .t1 {
@@ -117,91 +200,51 @@ input::placeholder {
   background: center / cover url(dryclosed.jpg);
 }
 
-.t1 h4,
-.t2 h4,
-.t3 h4 {
-  font-family: "Permanent Marker", cursive;
-  color: rgb(214, 214, 214);
-  font-size: 2rem;
-  padding-top: 0.5rem;
-  margin-bottom: -0.8rem;
-}
-
 #tire-subtext {
   color: white;
   font-size: 0.7rem;
-  padding: 0;
   margin: 0;
+  padding: 0;
   text-align: center;
 }
 
-.tire-guide1,
-.step1 p,
-.step2 p,
-.step3 p,
-.step4 p {
-  padding: 1.9rem;
-  text-align: left;
-  line-height: 1.6rem;
-  font-size: 1.25rem;
-  color: #020202;
+/* -----------------Step 2*/
+
+.t4 {
+  background: center / cover url(dry.jpg);
+}
+.t5 {
+  background: center / cover url(mixed.jpg);
+}
+.t6 {
+  background: center / cover url(wet.jpg);
 }
 
-.step1 .step-description,
-.step2 .step-description {
-  padding-bottom: 0;
+/* -----------------Step 3*/
+
+.step3 hr {
+  margin-top: 1rem;
 }
 
-.tg1-steps p:first-child {
-  margin-top: 3rem;
-}
-
-.tire-guide1 h1 {
-  padding-bottom: 1.5rem;
-  font-size: 1.6rem;
-  font-weight: 550;
-  color: var(--headerBlack);
-}
-
-.tg1-steps {
-  text-align: center;
-  margin-top: 2rem;
-}
-
-.tg1-steps p:nth-child(odd) {
-  font-weight: 600;
-  margin-top: 0.5rem;
-}
-
-.step1,
-.step2,
-.step3,
-.step4 {
-  background-color: rgb(199, 199, 199);
-  padding-top: 2rem;
-}
-
-.step1 h1 {
-  font-size: 1.7rem;
-}
+/* -----------------Step 4*/
 
 .step4 {
   padding-bottom: 4rem;
   transition: 0.1s;
 }
 
+.step4 span {
+  color: gray;
+}
+
 .step4 span:hover {
-  filter: brightness(120%);
   cursor: pointer;
+  filter: brightness(120%);
 }
 
 .dots i {
-  margin: 0.5rem;
   font-size: 0.6rem;
-}
-
-.step4 span {
-  color: gray;
+  margin: 0.5rem;
 }
 
 .step4 span:first-child,
@@ -217,59 +260,16 @@ input::placeholder {
 
 .step4 .step4-sub {
   font-size: 1.8rem;
+  font-weight: 600;
   padding-top: 0;
   padding-bottom: 1rem;
-  font-weight: 600;
 }
 
 .step4 .step4-category {
   font-size: 1.8rem;
+  font-weight: 300;
   padding-top: 0;
   padding-bottom: 0;
-  font-weight: 300;
-}
-
-.step1 h1,
-.step2 h1,
-.step3 h1,
-.step4 h1 {
-  text-align: center;
-  padding: 0.4rem 2rem 0 2rem;
-}
-
-.step1 .more-images,
-i,
-.step2 .more-images,
-i,
-.step3 .more-images,
-i {
-  color: var(--thisRed);
-  text-transform: uppercase;
-  font-weight: 600;
-  padding-top: 1rem;
-  font-size: 1.1rem;
-}
-
-.hero-tire-guide {
-  padding: 0;
-  margin: 0;
-}
-
-.step1-tires,
-.step2-tires,
-.step3-tires {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  height: 14.7rem;
-  grid-gap: 0.3rem;
-  padding-bottom: 0.8rem;
-}
-
-.step3 hr {
-  margin-top: 1rem;
-}
-img {
-  width: 95%;
 }
 
 .step4 h1 {
@@ -282,30 +282,32 @@ img {
 }
 
 .vittoria-image p {
-  padding: 0;
-  text-align: center;
-  position: relative;
   bottom: 5.5rem;
   font-size: 0.9rem;
-  padding-top: 0.5rem;
+  padding: 0;
+  position: relative;
   line-height: 1rem;
+  padding-top: 0.5rem;
+  text-align: center;
 }
 
 .vittoria-image p:nth-child(2) {
-  text-transform: uppercase;
-  font-weight: 800;
   font-size: 2rem;
+  font-weight: 800;
   position: relative;
+  text-transform: uppercase;
 }
 
 .step4 a {
+  border-bottom: 2px solid black;
   color: black;
-  padding-bottom: 0.2rem;
   font-size: 1rem;
   letter-spacing: 2px;
-  border-bottom: 2px solid black;
+  padding-bottom: 0.2rem;
   text-decoration: none;
 }
+
+/* -----------------Chat now*/
 
 .chat-now {
   background-color: rgb(20, 20, 20);
@@ -315,37 +317,33 @@ img {
 }
 
 .chat-now p:first-child {
-  text-transform: uppercase;
+  font-size: 1.4rem;
   padding-bottom: 0;
-  font-size: 1.7rem;
   text-align: left;
+  text-transform: uppercase;
 }
 
 .chat-now p:nth-child(2) {
-  padding-top: 0;
-  font-size: 1.1rem;
+  font-size: 1rem;
+  padding: 0 2rem;
 }
 
 .chat-now p {
-  padding: 2rem;
+  padding: 2.1rem;
   text-align: justify;
 }
 
-.chat-now p:nth-child(2) {
-  padding-bottom: 0;
-}
-
 .chat-now button {
-  width: 80%;
-  padding: 1rem;
+  background-color: rgb(20, 20, 20);
   border: 1px solid white;
+  border-radius: 2px;
   color: white;
-  text-transform: uppercase;
   font-size: 1.1rem;
   margin-bottom: 1rem;
-  border-radius: 2px;
+  padding: 1rem;
+  text-transform: uppercase;
   transition: 0.1s;
-  background-color: rgb(20, 20, 20);
+  width: 80%;
 }
 
 .chat-now button:hover {
@@ -353,31 +351,33 @@ img {
   cursor: pointer;
 }
 
+/* -----------------Footer*/
+
 .footer {
   background-color: #f3f3f3;
 }
 
 .footer button {
-  text-align: center;
-  padding: 0.6rem 1.2rem;
-  font-size: 1.1rem;
   background-color: transparent;
   border-radius: 2px;
-  width: 10rem;
   color: gray;
+  font-size: 1.1rem;
+  padding: 0.6rem 1.2rem;
+  width: 10rem;
+  text-align: center;
   transition: 0.1s;
 }
 
 .footer button:hover {
-  cursor: pointer;
   background-color: rgb(46, 46, 46);
+  cursor: pointer;
   color: white;
 }
 
 .footer ul {
-  text-align: left;
   list-style: none;
   margin: 2rem 0;
+  text-align: left;
 }
 
 .footer li:first-child {
@@ -385,8 +385,8 @@ img {
 }
 
 .footer li {
-  padding: 1rem;
   border-bottom: 1px solid var(--mediumGray);
+  padding: 1rem;
   transition: 0.1s;
 }
 
@@ -406,55 +406,40 @@ img {
 }
 
 .footer input {
+  background-color: white;
   margin-top: 2rem;
   width: 90%;
-  background-color: white;
 }
 
 .footer a {
+  border-bottom: 3px solid gray;
   color: gray;
   display: inline-block;
-  text-decoration: none;
-  border-bottom: 3px solid gray;
   margin-bottom: 1rem;
-}
-
-.footer .search-field {
-  padding: 0.7rem;
-  width: 95%;
-  font-style: italic;
-  margin: 0.5rem;
-  outline: none;
-  border-radius: 2px;
-  border: 1px solid #cccccc;
-  font-size: 0.9rem;
-  position: relative;
-  background-color: var(--lightestGray);
-  background: url(./assets/search.png) no-repeat scroll 21.5rem 9px;
+  text-decoration: none;
 }
 
 .footer-input input {
-  width: 70%;
-  padding: 0.7rem;
+  border: 1px solid #cccccc;
+  border-radius: 2px;
+  font-size: 0.95rem;
   font-style: italic;
   margin: 0.5rem;
   outline: none;
-  border-radius: 2px;
-  border: 1px solid #cccccc;
-  font-size: 0.95rem;
+  padding: 0.7rem;
   position: relative;
-  background-color: var(--lightestGray);
+  width: 70%;
 }
 
 .footer-input .fa-envelope {
-  font-size: 1.3rem;
-  color: white;
   background-color: var(--icons);
+  border-radius: 0 2px 2px 0;
+  color: white;
+  font-size: 1.3rem;
   padding: 0.65rem;
   position: relative;
   left: -10px;
   top: 1px;
-  border-radius: 0 2px 2px 0;
 }
 
 .footer button {
@@ -464,6 +449,8 @@ img {
 .footer-icons i {
   color: var(--icons);
 }
+
+/* -----------------Change to Competitive Cyclist*/
 
 .by-me {
   color: gray;
